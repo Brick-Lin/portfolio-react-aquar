@@ -45,13 +45,13 @@ const Sidebar = () => {
           <ul>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>預約訂票</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>訂票紀錄</span>
               </a>
             </li>
@@ -65,25 +65,25 @@ const Sidebar = () => {
           <ul>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>最新消息</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>館場導覽</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>館內活動</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>明星動物</span>
               </a>
             </li>
@@ -97,19 +97,19 @@ const Sidebar = () => {
           <ul>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>營業時間</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>參觀須知</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>交通資訊</span>
               </a>
             </li>
@@ -123,13 +123,13 @@ const Sidebar = () => {
           <ul>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>關於我們</span>
               </a>
             </li>
             <li>
               <a href="/">
-                <span class="material-symbols-outlined"> navigate_next </span>
+                <span className="material-symbols-outlined"> navigate_next </span>
                 <span>聯絡我們</span>
               </a>
             </li>
