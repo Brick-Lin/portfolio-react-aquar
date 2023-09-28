@@ -152,6 +152,7 @@ export function listenHomeScrollYFunction(){
     }
   }
 
+  requestAnimationFrame(listenHomeScrollYFunction)
   
 }
 
