@@ -3,8 +3,10 @@ import { useLocation } from 'react-router-dom/cjs/react-router-dom'
 
 const Header = () => {
 
-  let { pathname } = useLocation();
+  let { pathname } = useLocation();  //將路由方法解構賦值，在下面return的地方可依據路由網址，來判斷並選擇是否顯示元素
 
+
+  //判斷顯示器的尺寸變換
   window.addEventListener("resize", () => {
 
     // 靜態-標題尺寸RWD
@@ -27,8 +29,7 @@ const Header = () => {
     }
   })
 
-  window.addEventListener("scroll", () => {
-    
+  let headerLogoAni = () => {
     // 動畫-控制標題高度
     let headerHeight = getComputedStyle(document.querySelector("header")).height;
     let titleLocateWithScroll = window.scrollY + window.innerHeight/2;
@@ -52,7 +53,37 @@ const Header = () => {
         titleLocateChildren[i].style.fontSize = `${Math.max(titleFsWithScroll - (window.scrollY * 1.1), titleFsMin)}px`
       }
     }
-  })
+    window.requestAnimationFrame(headerLogoAni)
+  }
+
+  window.requestAnimationFrame(headerLogoAni)
+
+  // window.addEventListener("scroll", () => {
+    
+  //   // 動畫-控制標題高度
+  //   let headerHeight = getComputedStyle(document.querySelector("header")).height;
+  //   let titleLocateWithScroll = window.scrollY + window.innerHeight/2;
+  //   document.querySelector("#titleLocate").style.top = `${Math.max((titleLocateWithScroll - window.scrollY*1.85), parseInt(headerHeight)/2)}px`;
+
+  //   // 動畫-控制標題尺寸
+  //   let titleLocateChildren = document.querySelector("#titleLocate").children
+  //   let titleFsWithScroll;
+  //   let titleFsMin;
+
+  //   for(let i=0 ; i<titleLocateChildren.length ; i++){
+
+  //     if(window.innerWidth>768){
+  //       titleFsWithScroll = window.scrollY + 180;
+  //       titleFsMin = 50;
+  //       titleLocateChildren[i].style.fontSize = `${Math.max(titleFsWithScroll - (window.scrollY * 1.25), titleFsMin)}px`
+
+  //     }else{
+  //       titleFsWithScroll = window.scrollY + 90;
+  //       titleFsMin = 40;
+  //       titleLocateChildren[i].style.fontSize = `${Math.max(titleFsWithScroll - (window.scrollY * 1.1), titleFsMin)}px`
+  //     }
+  //   }
+  // })
 
 
   return (
