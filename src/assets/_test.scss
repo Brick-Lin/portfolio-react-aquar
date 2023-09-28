@@ -1,0 +1,22 @@
+.testpage{
+  background-color: $dark;
+  .bgImg{
+    background-image: url('../../public/images/ocean_background_AI_10.png');
+    background-size: cover;
+    width: 100vw;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .testContext{
+    position: relative;
+    min-height: 800px;
+    p{
+      color: $light;
+      margin: 0;
+    }
+  }
+}
+
