@@ -9,8 +9,7 @@ const HomeMain = () => {
   
   useEffect(() => {
     //視窗滾動
-    // window.addEventListener("scroll", listenHomeScrollYFunction);
-    requestAnimationFrame(listenHomeScrollYFunction)
+    window.addEventListener("scroll", listenHomeScrollYFunction);
   },[]);
 
 

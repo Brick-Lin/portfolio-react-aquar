@@ -151,8 +151,6 @@ export function listenHomeScrollYFunction(){
       document.querySelector("#fish2").classList.remove("fish-path2")
     }
   }
-
-  requestAnimationFrame(listenHomeScrollYFunction)
   
 }
 
