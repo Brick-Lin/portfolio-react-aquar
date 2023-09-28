@@ -7,11 +7,12 @@ const HomeMain = () => {
   window.addEventListener("resize", resizeFunction);
 
   
-  useEffect(() => {
-    //視窗滾動
-    window.addEventListener("scroll", listenHomeScrollYFunction);
-  },[]);
-
+  // useEffect(() => {
+  //   //視窗滾動
+  //   // window.addEventListener("scroll", listenHomeScrollYFunction);
+  //   window.requestAnimationFrame(listenHomeScrollYFunction)
+  // },[]);
+  window.requestAnimationFrame(listenHomeScrollYFunction)
 
   return (
     <main>
