@@ -40,7 +40,7 @@ main {
     }
     .subtitle{
       position: absolute;
-      top: 80%;
+      top: 75%;
       left: 50%;
       transform: translateX(-50%);
       p{
@@ -246,7 +246,7 @@ main {
     }
     .toNextBlock {
       position: absolute;
-      top: 95%;
+      top: 97.5%;
       left: 50%;
       width: 50px;
       height: 50px;
@@ -526,7 +526,7 @@ main {
       flex-direction: column;
       align-items: center;
       position: sticky;
-      top: 240px;
+      top: 200px;
       padding-bottom: 50px;
       .block4TextBlock-1{
         display: flex;
@@ -611,7 +611,7 @@ main {
     .mainBlock-1 {
       background-image: url('../../public/images/home-block-1-bg.jpg');
       .subtitle{
-        // top: 70%;
+        top: 80%;
         p{
           color: $light;
           text-shadow: 0em 0em 0.2em rgba(0, 0, 0, 0.5);
@@ -625,6 +625,9 @@ main {
           font-size: 16px;
           // font-weight: 600;
         }
+      }
+      .toNextBlock{
+        top: 95%;
       }
     }
 
@@ -738,6 +741,9 @@ main {
             animation: arrowRight 0.5s linear infinite
           }
         }
+      }
+      .toNextBlock{
+        top: 95%;
       }
     }
 
