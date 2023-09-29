@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-react-aquar/static/css/main.22007112.css",
+    "main.css": "/portfolio-react-aquar/static/css/main.420a5324.css",
     "main.js": "/portfolio-react-aquar/static/js/main.706cb042.js",
     "static/media/ocean_background_AI_10.png": "/portfolio-react-aquar/static/media/ocean_background_AI_10.ed3fc0c034da144208b2.png",
     "static/media/home-block-1-bg-portable.jpg": "/portfolio-react-aquar/static/media/home-block-1-bg-portable.f887dee18b4673cd84dd.jpg",
@@ -9,11 +9,11 @@
     "static/media/home-block-3-bg.jpg": "/portfolio-react-aquar/static/media/home-block-3-bg.535a54506e305110aaf0.jpg",
     "static/media/home-block-2-bg.jpg": "/portfolio-react-aquar/static/media/home-block-2-bg.01d1a1e6a526c49b7305.jpg",
     "index.html": "/portfolio-react-aquar/index.html",
-    "main.22007112.css.map": "/portfolio-react-aquar/static/css/main.22007112.css.map",
+    "main.420a5324.css.map": "/portfolio-react-aquar/static/css/main.420a5324.css.map",
     "main.706cb042.js.map": "/portfolio-react-aquar/static/js/main.706cb042.js.map"
   },
   "entrypoints": [
-    "static/css/main.22007112.css",
+    "static/css/main.420a5324.css",
     "static/js/main.706cb042.js"
   ]
 }
