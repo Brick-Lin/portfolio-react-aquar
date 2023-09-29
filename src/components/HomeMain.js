@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { listenHomeScrollYFunction, resizeFunction } from '../Animation';
 
 const HomeMain = () => {
@@ -77,7 +77,7 @@ const HomeMain = () => {
 
 
       <div id="mainBlock3" className="mainBlock-3">
-        <div className="container">
+        <div id="mainBlock3Container" className="container">
 
           <h2 id="mainBlock3TitleBlock" className="mainBlock3TitleBlock">
             <p>最新消息</p>
@@ -130,7 +130,7 @@ const HomeMain = () => {
 
 
       <div id="mainBlock4" className="mainBlock-4">
-          <div className="container">
+          <div id="mainBlock4Container" className="container">
 
             <div id="block4TextBlock1" className="block4TextBlock-1">
               <p>配合動物自然生態習性

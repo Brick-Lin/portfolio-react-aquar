@@ -102,36 +102,6 @@ export function listenHomeScrollYFunction(){
     }
   }
 
-  //跟隨滾動移動
-  if ( window.innerWidth > 768) {
-    if ( window.pageYOffset > window.innerHeight * 2 && window.pageYOffset < window.innerHeight * 3) {
-      document.querySelector("#mainBlock3TitleBlock").style.paddingTop = `${window.pageYOffset - (window.innerHeight * 2) + (window.innerHeight * 0.2)}px`
-    }
-  }else {
-    if ( window.pageYOffset > window.innerHeight * 2 && window.pageYOffset < window.innerHeight * 4.5) {
-      document.querySelector("#mainBlock3TitleBlock").style.paddingTop = `${window.pageYOffset - (window.innerHeight * 2) + 120}px`
-    }
-  }
-
-
-
-
-  ///////////////////// mainBlock4動畫 ////////////////////
-
-  //跟隨滾動移動
-  if ( window.innerWidth > 768) {
-    if ( window.pageYOffset > window.innerHeight * 3.75 && window.pageYOffset < window.innerHeight * 5) {
-      document.querySelector("#block4TextBlock1").style.transform = `translateY(${window.pageYOffset - (window.innerHeight * 3.75)}px)`
-      document.querySelector("#block4TextBlock2").style.transform = `translateY(${window.pageYOffset - (window.innerHeight * 3.75)}px)`
-    }
-  }else {
-    if ( window.pageYOffset > window.innerHeight * 5.25 && window.pageYOffset < window.innerHeight * 7) {
-      document.querySelector("#block4TextBlock1").style.transform = `translateY(${window.pageYOffset - (window.innerHeight * 5.25)}px)`
-      document.querySelector("#block4TextBlock2").style.transform = `translateY(${window.pageYOffset - (window.innerHeight * 5.25)}px)`
-    }
-  }
-
-
   ///////////////////// 魚動畫 ////////////////////
 
   if(window.innerWidth>768) {

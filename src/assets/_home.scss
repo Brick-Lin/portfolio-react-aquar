@@ -27,7 +27,6 @@ body {
   background-size: cover;
 }
 main {
-  z-index: 0;
   .mainBlock-1 {
     position: relative;
     height: 100vh;
@@ -270,20 +269,34 @@ main {
   }
   .mainBlock-3 {
     height: 350vh;
+    width: 100%;
     background: linear-gradient(180deg, #000 14.58%, rgba(0, 0, 0, 0.00) 46.35%);
+    &::before{
+      content: '';
+      display: block;
+      height: 60px;
+    }
+    .container{
+      position: sticky;
+      top: 120px;
+    }
     .mainBlock3TitleBlock{
       margin: 0 auto;
-      padding-top: 120px;
       width: 50%;
       white-space: nowrap;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 50px;
+      p{
+        margin: 0;
+      }
       p:nth-of-type(1){
         color: $light;
         text-shadow: 0em 0em 0.2em rgba(255, 255, 255, 0.5);
         font-size: 40px;
         font-weight: 900;
+        margin-bottom: 16px;
       }
       p:nth-of-type(2){
         color: $light;
@@ -411,15 +424,11 @@ main {
       width: 300px;
       height: 350px;
       margin: 0 auto;
-      margin-top: 50px;
-      
+      margin-bottom: 50px;
       .block3Card {
-        z-index: 5;
         position: absolute;
         left: 0;
         top: 0;
-        // width: 300px;
-        // height: 350px;
         width: 100%;
         height: 100%;
         border-radius: 20px;
@@ -443,8 +452,7 @@ main {
           bottom: 0;
           width: 100%;
           height: 45%;
-          background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 12.5%, rgba(0, 0, 0, 0.70) 25%);
-          backdrop-filter: blur(0.5px);
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7) 35%);
           padding: 17.5% 10%;
           border-radius: 0 0 20px 20px;
           p{
@@ -473,7 +481,6 @@ main {
       gap: 0.5em;
       background-color: $light;
       margin: 0 auto;
-      margin-top: 100px;
       padding: 10px 12.5px;
       width: fit-content;
       border-radius: 5rem;
@@ -509,20 +516,25 @@ main {
 
   .mainBlock-4{
     height: 250vh;
+    &::before{
+      content: '';
+      display: block;
+      height: 120px;
+    }
     .container{
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: sticky;
+      top: 240px;
+      padding-bottom: 50px;
       .block4TextBlock-1{
-        // background-color:#FFFFFF50;
-        backdrop-filter: blur(2.5px);
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
         border-radius: 10px;
-        padding: 2em 0;
-        margin: 50px auto 0;
+        margin-bottom: 150px;
         p{
           margin: 0;
           color: $light;
@@ -541,7 +553,6 @@ main {
       }
       .block4TextBlock-2{
         margin: 0 auto;
-        margin-top: 150px;  
         .block4TextBlock-content{
           margin: 0 auto;
           display: flex;
@@ -734,15 +745,26 @@ main {
     .mainBlock-3 {
       height: 200vh;
       background: linear-gradient(180deg, #000 14.58%, rgba(0, 0, 0, 0.00) 46.35%);
+      &::before{
+        content: '';
+        display: block;
+        height: 120px;
+      }
+      .container{
+        z-index: 3;
+        position: sticky;
+        top: 210px;
+        padding-bottom: 120px;
+      }
       .mainBlock3TitleBlock{
         z-index: 5;
         margin: 0 auto;
-        padding-top: 20vh;
         width: 50%;
         white-space: nowrap;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 70px;
         p:nth-of-type(1){
           color: $light;
           text-shadow: 0em 0em 0.2em rgba(255, 255, 255, 0.5);
@@ -758,14 +780,13 @@ main {
         }
       }
       .block3CardsGroup {
+        position: relative;
         width: 100%;
-        margin-top: 50px;
         display: flex;
         justify-content: center;
         gap: 10%;
-        
+        margin-bottom: 100px;
         .block3Card {
-          z-index: 5;
           position: relative;
           width: 300px;
           height: 350px;
@@ -799,7 +820,7 @@ main {
             bottom: 0;
             width: 100%;
             height: 45%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 12.5%, rgba(0, 0, 0, 0.70) 25%);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.7) 35%);
             backdrop-filter: blur(0.5px);
             padding: 17.5% 10%;
             border-radius: 0 0 20px 20px;
@@ -830,7 +851,6 @@ main {
         gap: 0.5em;
         background-color: $light;
         margin: 0 auto;
-        margin-top: 125px;
         padding: 10px 12.5px;
         width: fit-content;
         border-radius: 5rem;
@@ -885,15 +905,22 @@ main {
     .mainBlock-4{
       z-index: 5;
       height: 200vh;
+      &::before{
+        content: '';
+        display: block;
+        height: 150px;
+      }
       .container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: sticky;
+        top: 300px;
+        padding-bottom: 120px;
         .block4TextBlock-1{
           width: 100%;
           border-radius: 10px;
-          padding: 2em 0;
-          margin: 100px auto 0;
+          margin-bottom: 200px;
           p{
             margin: 0;
             color: $light;
@@ -903,7 +930,6 @@ main {
         }
         .block4TextBlock-2{
           margin: 0 auto;
-          margin-top: 150px;  
           .block4TextBlock-content{
             margin: 0 auto;
             display: flex;

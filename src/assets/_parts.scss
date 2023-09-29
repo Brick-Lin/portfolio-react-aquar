@@ -1081,17 +1081,19 @@ footer{
       }
     }
     .fish{
+      z-index: 1;
+      position: relative;
       visibility: hidden;
       width: 75px;
       height: 75px;
       transform: rotate(45deg);
       offset-rotate: unset;
-      filter: drop-shadow(0em 0em 1em rgba(255, 255, 255, 0.5));
+      filter: drop-shadow(0em 0em 1em rgba(255, 255, 255, 0.5)) blur(0.5px);
     }
     .fish-path1{
       visibility: visible;
       animation: fishMove1 15s infinite linear both;
-      offset-path: path('M 0 2160 C 644 2461 975 2160 1484 2419 C 1904 2684 1649 3035 1649 3259 C 1632 3533 1827 3566 1718 3863 C 1606 4043 1481 4127 1261 4055 C 1116 4005 864 3899 785 4317');
+      offset-path: path('M 0 2110 C 644 2411 975 2110 1484 2369 C 1904 2634 1649 2985 1649 3209 C 1632 3483 1827 3516 1718 3813 C 1606 3993 1481 4077 1261 4005 C 1116 3955 864 3849 785 4267');
     }
     .fish-path2{
       visibility: visible;
